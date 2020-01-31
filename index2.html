@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dropdown">
+    <h1>
+        Stavke
+    </h1>
+    <header>
+        <button>Dropdown</button>
+        <ul>
+            <li><a href="#">Stavka 1</a></li>
+            <li><a href="#">Stavka 2</a></li>
+            <li><a href="#">Stavka 3</a></li>
+            <li><a href="#">Stavka 4</a></li>
+            <li><a href="#">Stavka 5</a></li>
+          </ul>
+    </header>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script>
+        $('header button').on('click',function(){
+            $('ul').slideToggle(280);
+          });
+          
+    </script>
+
+</body>
+
+</html>
